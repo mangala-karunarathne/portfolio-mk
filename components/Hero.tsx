@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
+
 
 const Hero = () => {
   return (
@@ -29,9 +33,18 @@ const Hero = () => {
           </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless Experiences"
+            words="Transforming Concepts into Seamless User Experiences"
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-6xl">Hi, I&apos;m Mangala Next.js Developer based in Sri Lanka</p>
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-6xl">
+            Hi, I&apos;m Mangala Next.js Developer based in Sri Lanka
+          </p>
+          <a href="#about">
+            <MagicButton 
+            title="Show my work"
+            icon={<FaLocationArrow/>}
+            position="right"
+            />
+          </a>
         </div>
       </div>
     </div>
